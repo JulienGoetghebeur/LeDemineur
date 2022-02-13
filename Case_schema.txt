@@ -1,0 +1,26 @@
+@startuml
+class Case {
++cote : Int
++devoile : Bool
++marque : Bool
++numero : Int
++piege : Bool
++img : image
+
++get_cote() : hgyfjhgjhgjhg
++get_devoile()
++get_marque()
++get_numero()
++get_piege()
++set_cote()
++devoiler()
++marquer()
++set_numero()
++pieger()
++set_image()
++afficher_case()
+}
+@enduml
+
+
+

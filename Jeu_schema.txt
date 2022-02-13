@@ -1,0 +1,42 @@
+@startuml
+class Case {
++cote : Int
++devoile : Bool
++marque : Bool
++numero : Int
++piege : Bool
++img1 : image
++img2 : image
+
++get_cote() : renvoie le côté de la case
++get_devoile() : renvoie devoile
++get_marque() : renvoie marque
++get_numero() : renvoie numero
++get_piege() : renvoie piege
++set_cote(x) : la variable cote prend la valeur x
++devoiler() : la variable devoile devient False
++marquer() : la variable marquer devient True
++set_numero(x) : la variable numero prend la valeur x
++pieger() : la variable piege devient True
++set_img1(image) : la variable img1 devient image
++set_img2(image) : la variable img2 devient image
++afficher_case() : affiche l'img1 si devoile est True sinon l'img2
+}
+class Grille{
++ larguer : int
++ longueur : int
++ taille_case : int
++ nouvelle_grille() : Creer une nouvelle grille constituée de cases numérotées et de bombes
++ afficher_grille() : Affiche la grille à l'écran 
+}
+object Ecran{ 
++ ecran_accueuil() : Affiche l'écran d'accueuil avec un bouton jouer et un bouton quitter
++ ecran_difficulte() : Affiche trois boutons "facile"; "normal"; "difficile" 
++ ecran_jeu() : Affiche un bouton pause, le timer et la grille
++ ecran_pause() : Affiche un bouton reprendre et un bouton quitter 
++ ecran_fin() : Affiche un bouton rejouer, retour, ainsi que Perdu/Gagné et le temps
++ bouton_image() : Affiche un bouton avec une image dedans
++ bouton_texte() : Affiche un bouton avec du texte dedans 
+ :
+}
+@enduml
